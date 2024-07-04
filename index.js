@@ -13,12 +13,10 @@ connectDB();
 app.use(express.json());
 // app.use(bodyParser.json());   
 app.use(cors({
-  origin:"*",
-  methods: ['GET','PUT','POST'],
-  // credentials:true,
-  // optionsSuccessStatus: 200,
-  allowedHeaders:['Content-Type','Authorization']
-})) 
+  origin: '*',
+  methods: ['GET', 'PUT', 'POST'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use("/api",linkRoutes)
 app.use("/api",remainRoutes)
 
