@@ -1,13 +1,17 @@
 {
-    "routes": {
-      "/api/*": {
-        "methods": ["GET", "POST", "PUT", "DELETE"],
-        "allow": ["GET", "POST", "PUT", "DELETE"],
-        "headers": ["Content-Type", "Authorization"],
-        "cors": {
-          "origin": "*"
-        }
+    "version": 2,
+    "env": {
+    },
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
       }
-    }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/"
+      }
+    ]
   }
-  
