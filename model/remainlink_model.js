@@ -5,10 +5,14 @@ const nameSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  MobileNumber: {
+    type: Number,
+    required: true,
+  },
   whoIAm: {
     type: String,
     required: true,
-    enum: ['influencer','faculty','student','agent','offline'],
+    enum: ['influencer','faculty','student','agent','offline', 'college'],
   },
 },);
 
