@@ -1,7 +1,6 @@
 import NameModel from "../model/remainlink_model.js";
 
 const save_remain = async (req, res) => {
-  console.log("api")
   try {
     const { username,MobileNumber,whoIAm } = req.body;
   

@@ -10,6 +10,9 @@ const linkSchema = new Schema({
   password: {
     type: String,
   },
+  location: {
+    type: String,
+  }
 });
 
 // Create a model for the Link
